@@ -1,0 +1,110 @@
+:root{
+    --main-radius: 10px;
+    --main-padding: 20px;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://galalitescreens.com/wp-content/uploads/2017/11/cinema-theatre.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*filter: blur(5px);*/
+}
+
+.container{
+    background-color: rgb(236, 236, 236);
+    display: grid;
+    height: auto;
+    padding: auto;
+    grid-template-columns:300px;
+    grid-template-rows: 100px, 100px, 100px;
+    grid-template-areas: 
+    "web"
+    "form"
+    "resumen";
+    grid-gap: 0.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:20px;
+    color: #160059;
+}
+
+
+
+#Web{
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    color: rgb(80, 21, 21);
+    font-weight: auto;
+
+
+}
+
+#form{
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    font-size: 0.8em
+}
+
+#resumen{
+    border-radius:0%;
+    padding: var(--main-padding);
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+}
+
+button{
+    background-color: rgb(77, 1, 1);
+    color: azure;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--main-radius);
+}
+
+button:hover{
+    background-color:rgb(115, 1, 1);
+}
+
+#Op,  #nickname, #X{
+    color: rgb(105, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(77, 1, 1);
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+    .container {
+        font-size: 14px; 
+        padding: 5px; 
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        grid-template-areas:
+            "web"
+            "form"
+            "resumen";
+    }
+
+    #Op, #X, #nickname {
+        padding: 10px 15px; 
+        font-size: 14px; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+}
