@@ -31,7 +31,6 @@ body{
     grid-gap: 0.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
-    text-transform: uppercase;
     font-size:20px;
     color: #160059;
 }
@@ -44,6 +43,7 @@ body{
     text-align: center;
     color: rgb(80, 21, 21);
     font-weight: auto;
+    text-transform: uppercase;
 
 
 }
@@ -52,7 +52,9 @@ body{
     border-radius: var(--main-radius);
     padding: var(--main-padding);
     text-align: center;
-    font-size: 0.8em
+    font-size: 0.8em;
+    text-transform: none;
+
 }
 
 #resumen{
@@ -63,6 +65,8 @@ body{
     background-attachment: fixed;
     height: auto;
     width: auto;
+    text-transform: none;
+
 }
 
 button{
@@ -72,6 +76,10 @@ button{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: var(--main-radius);
+    text-transform: uppercase;
+    text-size-adjust: small;
+
+
 }
 
 button:hover{
