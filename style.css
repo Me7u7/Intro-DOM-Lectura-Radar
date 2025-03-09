@@ -58,11 +58,15 @@ body{
 }
 
 #resumen{
-    border-radius:0%;
+    border-radius:10%;
     padding: var(--main-padding);
-    text-align: center;
+    text-align: left;
     background-position: center;
     background-attachment: fixed;
+    background-color: #edc2e6;
+    border-color: blueviolet;
+    border-radius: 0%;
+    color: rgb(43, 36, 50);
     height: auto;
     width: auto;
     text-transform: none;
